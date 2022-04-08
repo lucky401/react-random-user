@@ -3,7 +3,7 @@ import handler from './handler';
 
 const ENVIRONMENT = process.env.REACT_APP__STAGE || 'local';
 // eslint-disable-next-line import/no-dynamic-require
-const CONFIG_ENVIRONMENT = require(`@/config/${ENVIRONMENT.toLowerCase()}.json`);
+const CONFIG_ENVIRONMENT = require(`../config/${ENVIRONMENT.toLowerCase()}.json`);
 
 const { apiBaseUrl } = CONFIG_ENVIRONMENT.env;
 

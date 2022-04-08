@@ -27,6 +27,7 @@
     "react/prop-types": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "no-unused-vars": "warn",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "react/jsx-props-no-spreading": "off"
   }
 }
