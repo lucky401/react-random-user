@@ -8,7 +8,9 @@
     "airbnb",
     "prettier/prettier",
     "plugin:prettier/recommended",
-    "plugin:react/jsx-runtime"
+    "plugin:react/jsx-runtime",
+    "plugin:css/recommended",
+    "plugin:json/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -17,7 +19,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "css"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
