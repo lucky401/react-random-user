@@ -1,5 +1,6 @@
 {
   "version": "0.1.0",
+  "private": false,
   "name": "react-random-user",
   "title": "Example search and filter user table application with ReactJS and React Table 🚀",
   "description": "The React and JavaScript ecosystem is full of tools and libraries to help you build your applications. In this example we'll build an application from scratch using React, Zustand, and React Table.",
@@ -11,11 +12,14 @@
     "node": ">=14",
     "npm": ">=6"
   },
+  "bugs": {
+    "email": "luckydewa123@gmail.com",
+    "url": "https://github.com/lucky401/react-random-user/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucky401/react-random-user.git"
   },
-  "private": false,
   "author": {
     "name": "Lucky Dewa Satria",
     "email": "luckydewa123@gmail.com",
@@ -25,22 +29,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "npx prettier --write src/* && npx eslint 'src/**/**/**' --quiet --fix",
     "eject": "react-scripts eject"
   },
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "node ./scripts/pre-commit",
+      "pre-push": "node ./scripts/pre-push"
+    }
   },
   "browserslist": {
     "production": [
@@ -53,5 +49,26 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.0.0",
+    "husky": "^4.3.8",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "2.6.0"
   }
 }
